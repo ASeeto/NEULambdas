@@ -1,6 +1,5 @@
 // HORIZONTAL SLIDING PANEL
 jQuery(function($) {
-
     $('a.panel').click(function(event) {
         event.preventDefault();
         var $target = $($(this).attr('href')),
@@ -24,5 +23,4 @@ jQuery(function($) {
             animIn();
         }
     });
-
 });

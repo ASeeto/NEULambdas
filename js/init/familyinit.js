@@ -17,7 +17,7 @@ $(document).ready(function(){
 												'<span class="subtitle">'+group.semester+'</span> '+
 												'<span class="title">\('+group.letter+'\)</span>'+
 												'</a><br />');
-			$('#left').append(groupname);
+			$('#fa_l').append(groupname);
 		}
 	});
 
@@ -26,42 +26,39 @@ $(document).ready(function(){
 		if(index != 0){
 			if(group.letter == "Charter"){
 				var	target =	$('<div class="panel" id="target'+index+'">'+
-												'<div id="pdInfo" '+
-												'style="float: left; background-color: #2b2b2b; width: 30%; height: 100%; text-align: center; margin-left: auto; margin-right: auto; color: #fff; font-size: 10px;">'+
-												'<br><font size="6px">Pledge Dads</font>'+
-												'<br>Rob Chan<br><img class="profile" height="30px" src="images/family/0_RobChan.png" width="30px" />'+
-												'<br>Mac Mellish<br><img class="profile" height="30px" src="images/family/0_MacMellish.png" width="30px" />'+
-												'<br>Hau Tran<br><img class="profile" height="30px" src="images/family/0_HauTran.png" width="30px" />'+
+												'<div class="pdinfo">'+
+												'<br><p class="pledgedad">Pledge Dads</p>'+
+												'Rob Chan<br><img class="profile" height="30px" src="img/family/0_RobChan.png" width="30px" />'+
+												'<br>Mac Mellish<br><img class="profile" height="30px" src="img/family/0_MacMellish.png" width="30px" />'+
+												'<br>Hau Tran<br><img class="profile" height="30px" src="img/family/0_HauTran.png" width="30px" />'+
 												'</div>'+
-												'<div id="'+group.letter+'" style="float: right; width: 70%; margin-left: auto; margin-right: auto; padding: 0; text-align: center;">'+
+												'<div id="'+group.letter+'" class="class_r">'+
 														'<div class="targetheader">'+group.letter+' Class</div>'+
 												'</div>'+
 												'</div>');
-				$('#right').append(target);
+				$('#fa_r').append(target);
 			} else {
 				var	target =	$('<div class="panel" id="target'+index+'">'+
-												'<div id="pdInfo" '+
-												'style="float: left; background-color: #2b2b2b; width: 30%; height: 100%; text-align: center; margin-left: auto; margin-right: auto; color: #fff;"'+
-												'><br><br>Pledge Dad<br><br>'+
-												'<img class="profile" height="80px" src="images/family/'+group.pd.num+'.png" width="80px" /><br><br>'+group.pd.name+
+												'<div class="pdinfo">'+
+												'<br><p class="pledgedad">Pledge Dad</p>'+
+												'<br><img class="profile" height="80px" src="img/family/'+group.pd.num+'.png" width="80px" /><br><br>'+group.pd.name+
 												'</div>'+
-												'<div id="'+group.letter+'" style="float: right; width: 70%; margin-left: auto; margin-right: auto; padding: 0; text-align: center;">'+
+												'<div id="'+group.letter+'" class="class_r">'+
 														'<div class="targetheader">'+group.letter+' Class</div>'+
 												'</div>'+
 												'</div>');
-				$('#right').append(target);
+				$('#fa_r').append(target);
 			}
 		} else {
-			var	target =	$('<div class="panel active" id="target0" style="display: block; left: 0px; background-color: #fff; text-align: center; color: #000;">'+
-											'<div style="padding: 20px; font-size: 10px;">'+
-												'<br>Please select a class from the left hand column. <br>Hover over pictures for more information on a brother.<br>'+
-												'<img src="images/example.png">'+
-											'</div>'+
-											//<!--
-											// <p align="center"><iframe allowfullscreen="" frameborder="0" height="281" id="video" mozallowfullscreen="" src="//player.vimeo.com/video/107407328?api=1;autoplay=1&amp;loop=1" webkitallowfullscreen="" width="500"></iframe></p>
-											// -->
+			var	target =	$('<div class="panel active" id="target0">'+
+												'<div id="target0content">'+
+													'<br><br>'+
+													'<p>Please select a class from the left hand column.</p>'+
+													'<p>Hover over pictures for more information on a brother.</p>'+
+													'<img src="img/example.png">'+
+												'</div>'+
 											'</div>');
-			$('#right').append(target);
+			$('#fa_r').append(target);
 		}
 	});
 	
@@ -79,7 +76,7 @@ $(document).ready(function(){
 				if(tempIndex <= group.size){
 					
 					var	b =	$('<div class="profile">'+
-										'<img class="popper profile" data-popbox="pop'+i+'" height="60px" src="images/family/'+i+'.png" width="60px" />'+
+										'<img class="popper profile" data-popbox="pop'+i+'" height="60px" src="img/family/'+i+'.png" width="60px" />'+
 										'<br />'+brothers[i].name+'</div>');
 					$('#'+group.letter).append(b);
 					tempIndex++;
