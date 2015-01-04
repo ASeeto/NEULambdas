@@ -1,0 +1,115 @@
+/* CSS Section 1 from Example Standard */
+body {
+	-webkit-font-smoothing: antialiased;
+	font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #232525;
+}
+
+#slides {
+	display: none
+}
+
+#slides .slidesjs-navigation {
+	margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+	margin-right: 5px;
+	float: left;
+}
+
+#slides .slidesjs-next {
+	margin-right: 5px;
+	float: left;
+}
+
+a.slidesjs-navigation:link, a.slidesjs-navigation:visited {
+	text-decoration: none;
+}
+
+.slidesjs-pagination {
+	margin: 6px 0 0;
+	float: right;
+	list-style: none;
+}
+
+.slidesjs-pagination li {
+	float: left;
+	margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url(../images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+	background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+	background-position: 0 -26px
+}
+
+.icon-large" a:link,
+.icon-large" a:visited {
+	color: #333
+}
+
+.icon-large" a:hover,
+.icon-large" a:active {
+	color: #9e2020
+}
+
+.navbar {
+	overflow: hidden
+}
+
+/* CSS Section 2 from Example Standard */
+#slides {
+	display: none
+}
+
+.container {
+	margin: 0 auto;
+	width: 700px;
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.container {
+		width: auto
+	}
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+	.container {
+		width: auto
+	}
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+	.container {
+		width: 700px;
+	}
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+	.container {
+		width: 700px;
+	}
+}
