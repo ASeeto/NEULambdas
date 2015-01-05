@@ -72,10 +72,10 @@ div.profile{position:relative;float:left;margin:5px;text-align:center;font-size:
 
 /* CHAPTERS */
 #chapters{text-align:left;font-size:10px}
-#chapters a:link, a:visited{color:#45c8dc}
+#chapters a:link, a:visited{color:#3fb4c6}
 .chaptertd{padding:5px 20px 0px}
 .topvalign{border-left:1px solid;display: table-cell;vertical-align: top;}
-.chaptersheading{font-size:16px}
+.chaptersheading{font-size:16px;text-shadow: rgba(0,0,0,.4) 1px 2px 1px}
 
 /* ADDDITIONAL SELECTORS */
 .wrap{height:inherit;background-color: inherit;margin: 0 auto;overflow: hidden;}
