@@ -8,15 +8,15 @@
 //    @apd:       refers to the {Roster #, Assistant Pledge Dad(s)} of the class
 
 var classInformation = [
-  { letter: 'Zero',     semester: 'Zero',       size: 0,  pd: {num: 0,  name: 'Zero'},            apd:[{num: 0, name: 'Zero'}, {num: 0, name: 'Zero'}] }, // 0 Place Holder
-  { letter: 'Charter',  semester: 'SPR 2009',   size: 9,  pd: {num: 0,  name: ''},                apd:['']  },
-  { letter: 'Alpha',    semester: 'FAL 2009',   size: 4,  pd: {num: 7,  name: 'Jason Chu'},       apd:['']  },
-  { letter: 'Beta',     semester: 'SPR 2010',   size: 5,  pd: {num: 6,  name: 'Kevin Lei'},       apd:['']  },
-  { letter: 'Gamma',    semester: 'WIN 2011',   size: 5,  pd: {num: 5,  name: 'Richard Lai'},     apd:['']  },
-  { letter: 'Delta',    semester: 'SPR 2011',   size: 5,  pd: {num: 4,  name: 'Kevin Chang'},     apd:[{num: 16, name: 'Charles Jung'}, {num: 10, name: 'Brian Shin'}]  },
-  { letter: 'Epsilon',  semester: 'SPR 2013',   size: 7,  pd: {num: 11, name: 'Derrick Quach'},   apd:[{num: 15, name: 'Ryan Ho'}, {num: 18, name: 'George Wu'}, {num: 19, name: 'Teddy Lee'}]  },
-  { letter: 'Zeta',     semester: 'SPR 2014',   size: 5,  pd: {num: 15, name: 'Ryan Ho'},         apd:[{num: 14, name: 'Justin Kwan'}, {num: 21, name: 'Larry Lee'}, {num: 25, name: 'Kevin Zhang'}]  },
-  { letter: 'Eta',      semester: 'FAL 2014',   size: 10, pd: {num: 10, name: 'Brian Shin'},      apd:[{num: 34, name: 'Raymond Yang'}, {num: 31, name: 'Kevin Lin'}]  }//,
+  { letter: 'Zero',     semester: 'Zero',          size: 0,  pd: {num: 0,  name: 'Zero'},            apd:[{num: 0, name: 'Zero'}, {num: 0, name: 'Zero'}] }, // 0 Place Holder
+  { letter: 'Charter',  semester: 'SPRING 2009',   size: 9,  pd: {num: 0,  name: ''},                apd:['']  },
+  { letter: 'Alpha',    semester: 'FALL 2009',     size: 4,  pd: {num: 7,  name: 'Jason Chu'},       apd:['']  },
+  { letter: 'Beta',     semester: 'SPRING 2010',   size: 5,  pd: {num: 6,  name: 'Kevin Lei'},       apd:['']  },
+  { letter: 'Gamma',    semester: 'WINTER 2011',   size: 5,  pd: {num: 5,  name: 'Richard Lai'},     apd:['']  },
+  { letter: 'Delta',    semester: 'SPRING 2011',   size: 5,  pd: {num: 4,  name: 'Kevin Chang'},     apd:[{num: 16, name: 'Charles Jung'}, {num: 10, name: 'Brian Shin'}]  },
+  { letter: 'Epsilon',  semester: 'SPRING 2013',   size: 7,  pd: {num: 11, name: 'Derrick Quach'},   apd:[{num: 15, name: 'Ryan Ho'}, {num: 18, name: 'George Wu'}, {num: 19, name: 'Teddy Lee'}]  },
+  { letter: 'Zeta',     semester: 'SPRING 2014',   size: 5,  pd: {num: 15, name: 'Ryan Ho'},         apd:[{num: 14, name: 'Justin Kwan'}, {num: 21, name: 'Larry Lee'}, {num: 25, name: 'Kevin Zhang'}]  },
+  { letter: 'Eta',      semester: 'FALL 2014',     size: 10, pd: {num: 10, name: 'Brian Shin'},      apd:[{num: 34, name: 'Raymond Yang'}, {num: 31, name: 'Kevin Lin'}]  }//,
   // { letter: 'Theta', semester: 'SPR 2015',   size: 5 }
 ]
 
