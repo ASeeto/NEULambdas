@@ -1,17 +1,10 @@
 $(document).ready(function(){
 	// Initiate Active Chapters
 	$.each(chapters_active, function(index, chapter){
-		if(index>20){
-			var	c =	$('<a href="'+chapter.website+
-								'" target="_blank">'+chapter.letter+
-								' - '+chapter.school+'</a><br />');
-			$('#chapters_active2').append(c);
-		}else{
-			var	c =	$('<a href="'+chapter.website+
-								'" target="_blank">'+chapter.letter+
-								' - '+chapter.school+'</a><br />');
-			$('#chapters_active1').append(c);
-		}
+		var	c =	$('<a href="'+chapter.website+
+							'" target="_blank">'+chapter.letter+
+							' - '+chapter.school+'</a><br />');
+		$('#chapters_active').append(c);
 	});
 	
 	// Initiate Active Chapters

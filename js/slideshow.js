@@ -22,16 +22,18 @@
 						var content = $(element.content);
 						var src = content[0].children[0].src;
 						var txt = '';
+						var url = element.link;
 						for(i=2; i<content.length; i++){
 							if(content[i].innerHTML){ txt += content[i].innerHTML; }
 						}
-						var	e =	$('<div class="slidecontainer">'+
-												'<div id="slidetitle"><strong>'+title+'</strong></div>'+
-												'<div class="slidecontent">'+
-													'<div id="slidedivleft"><img src="'+src+'"></div>'+
-													'<div id="slidedivright"><p class="slidetxt">'+txt+'</p></div>'+
-												'</div>'+
-											'</div>');
+						var	e =	$('<a href="'+url+'" target="_blank">'+
+									'<div class="slidecontainer">'+
+										'<div class="slidecontent">'+
+											'<img src="'+src+'">'+
+											'<div class="tumblr_post_title">'+title+'</div>'+
+										'</div>'+
+									'</div>'+
+									'</a>');
 						$('#slides').append(e);
 					});
 					var nav = $('<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>'+
@@ -40,8 +42,8 @@
 				}
 				// Initiate Slideshow
 				$('#slides').slidesjs({
-					width: 700,
-					height: 319,
+					width: 800,
+					height: 490,
 					play: {
 						active: false,
 						auto: true,

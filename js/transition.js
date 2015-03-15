@@ -14,20 +14,4 @@ $(function() {
 			return false;
 		}
 	});
-	$('#next').click(function(){
-		var current = $('.storyactive').attr('id').slice(4);
-		if(current<3){
-			var next = parseInt(current) + 1;
-			$('.storyactive').removeClass('storyactive');
-			$('#part'+next).addClass('storyactive');
-		}
-	});
-	$('#prev').click(function(){
-		var current = $('.storyactive').attr('id').slice(4);
-		if(current>1){
-			var prev = parseInt(current) - 1;
-			$('.storyactive').removeClass('storyactive');
-			$('#part'+prev).addClass('storyactive');
-		}
-	});
 });
