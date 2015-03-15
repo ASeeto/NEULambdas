@@ -101,16 +101,36 @@ a{text-decoration:none}
 	display:block;
 }
 
+/* SCROLLBAR */
+.contentbox::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+
+.contentbox::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+.contentbox::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
 /* GENERAL SUBCONTENT BOX */
 .contentbox{
 	display:block;
 	border: #000 solid 1px;
-	width:800px;
+	width:820px;
 	height:500px;
 	margin: 0 auto;
 	overflow:scroll;
 	padding: 20px;
 	background-color:#262a33;
+	overflow-x: hidden;
 }
 
 /* SUBCONTENT: NEWSFEED */
