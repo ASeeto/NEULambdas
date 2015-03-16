@@ -200,6 +200,7 @@ ul.mission li{
 	width:250px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 30px;
 }
 #family .contentbox .class_dad img{
 	padding:0px;
@@ -230,7 +231,7 @@ ul.mission li{
 	float:left;
 	display:block;
 	width:500px;
-	padding-left:35px;
+	padding-left:5px;
 	border-left: 1px solid #1d2027;
 	padding-top: 20px;
 	padding-bottom: 20px;
