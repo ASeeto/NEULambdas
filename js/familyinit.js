@@ -38,7 +38,7 @@ $(document).ready(function(){
                 $('#family .contentbox #'+group.letter).append(target);
             } else {
                 var target =    $('<div class="class_dad">'+
-                                        '<img class="profile" src="img/family/'+group.pd.num+'.png" /><br><b>Pledge Dad</b><br />'+group.pd.name+
+                                        '<img class="popper profile" data-popbox="pop'+group.pd.num+'" src="img/family/'+group.pd.num+'.png" /><br><b>Pledge Dad</b><br />'+group.pd.name+
                                   '</div>'+
                                   '<div class="class_members"></div>');
                 $('#family .contentbox #'+group.letter).append(target);
@@ -55,7 +55,7 @@ $(document).ready(function(){
                 if(tempIndex <= group.size){
                     
                     var b = $('<div class="class_member">'+
-                                '<img class="popper profile" data-popbox="pop'+i+'" height="60px" src="img/family/'+i+'.png" width="60px" />'+
+                                '<img class="popper profile" data-popbox="pop'+i+'" src="img/family/'+i+'.png" />'+
                                 '<br />'+brothers[i].name+
                               '</div>');
                     $('#family .contentbox #'+group.letter+' .class_members').append(b);
