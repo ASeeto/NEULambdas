@@ -29,7 +29,7 @@ $(document).ready(function(){
         if(index != 0){
             if(group.letter == "Charter"){
                 var target =    $('<div class="class_dad">'+
-                                        '<b>Pledge Masters</b><br><br>'+
+                                        '<b>New Member Educators</b><br><br>'+
                                         '<div><img class="profile" src="img/family/0_RobChan.png" /><br>Rob Chan</div>'+
                                         '<div><img class="profile" src="img/family/0_MacMellish.png" /><br>Mac Mellish</div>'+
                                         '<div><img class="profile" src="img/family/0_HauTran.png" /><br>Hau Tran</div>'+
@@ -38,7 +38,7 @@ $(document).ready(function(){
                 $('#family .contentbox #'+group.letter).append(target);
             } else {
                 var target =    $('<div class="class_dad">'+
-                                        '<img class="popper profile" data-popbox="pop'+group.pd.num+'" src="img/family/'+group.pd.num+'.png" /><br><b>Pledge Dad</b><br />'+group.pd.name+
+                                        '<img class="popper profile" data-popbox="pop'+group.pd.num+'" src="img/family/'+group.pd.num+'.png" /><br><b>New Member Educator</b><br />'+group.pd.name+
                                   '</div>'+
                                   '<div class="class_members"></div>');
                 $('#family .contentbox #'+group.letter).append(target);

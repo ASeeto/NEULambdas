@@ -15,5 +15,6 @@ var eboards = [
   { president: '11',    external: '14', internal: '18', treasurer: '22', secretary: '20', semester: 'Fall 2011 - Spring 2012'},
   { president: '14',    external: '19', internal: '15', treasurer: '28', secretary: '27', semester: 'Fall 2012 - Spring 2014'},
   { president: '27',    external: '26', internal: '25', treasurer: '24', secretary: '31', semester: 'Fall 2014'},
-  { president: '29',    external: '26', internal: '31', treasurer: '24', secretary: '37', semester: 'Spring 2015 - Fall 2015'}
+  { president: '29',    external: '26', internal: '31', treasurer: '24', secretary: '37', semester: 'Spring 2015'},
+  { president: '34',    external: '46', internal: '40', treasurer: '32', secretary: '39', semester: 'Fall 2015'}
 ];

@@ -16,7 +16,9 @@ var classInformation = [
   { letter: 'Delta',    semester: 'SPRING 2011',   size: 5,  pd: {num: 4,  name: 'Kevin Chang'},     apd:[{num: 16, name: 'Charles Jung'}, {num: 10, name: 'Brian Shin'}]  },
   { letter: 'Epsilon',  semester: 'SPRING 2013',   size: 7,  pd: {num: 11, name: 'Derrick Quach'},   apd:[{num: 15, name: 'Ryan Ho'}, {num: 18, name: 'George Wu'}, {num: 19, name: 'Teddy Lee'}]  },
   { letter: 'Zeta',     semester: 'SPRING 2014',   size: 5,  pd: {num: 15, name: 'Ryan Ho'},         apd:[{num: 14, name: 'Justin Kwan'}, {num: 21, name: 'Larry Lee'}, {num: 25, name: 'Kevin Zhang'}]  },
-  { letter: 'Eta',      semester: 'FALL 2014',     size: 10, pd: {num: 10, name: 'Brian Shin'},      apd:[{num: 34, name: 'Raymond Yang'}, {num: 31, name: 'Kevin Lin'}]  }//,
+  { letter: 'Eta',      semester: 'FALL 2014',     size: 10, pd: {num: 10, name: 'Brian Shin'},      apd:[{num: 34, name: 'Raymond Yang'}, {num: 31, name: 'Kevin Lin'}]  },
+  { letter: 'Theta',    semester: 'SPRING 2015',   size: 5,  pd: {num: 19, name: 'Teddy Lee'},       apd:[{num: 29, name: 'Ryan Lau'}, {num: 30, name: 'Jackie Mac'}, {num: 32, name: 'Huy Le'}]  },
+  // { letter: 'Theta', semester: 'SPR 2015',   size: 5 }//,
   // { letter: 'Theta', semester: 'SPR 2015',   size: 5 }
 ]
 
@@ -75,7 +77,12 @@ var brothers = [
   { name: 'Kevin Chu',        nickname: 'Rain' ,          rosternumber: '47'}, 
   { name: 'Ken Chen',         nickname: 'Supra' ,         rosternumber: '48'}, 
   { name: 'Chris Situ',       nickname: 'Majin Buu' ,     rosternumber: '49'}, 
-  { name: 'Kurt Dentinger',   nickname: 'Torch' ,         rosternumber: '50'}//,
+  { name: 'Kurt Dentinger',   nickname: 'Torch' ,         rosternumber: '50'},
+  { name: 'Willy Hlaing',     nickname: 'Spark'           rosternumber: '51'}, 
+  { name: 'Daniel Zhu',       nickname: 'Ghost'           rosternumber: '52'}, 
+  { name: 'Solomon Park',     nickname: 'Crash'           rosternumber: '53'}, 
+  { name: 'Min Kim',          nickname: 'Crusade'         rosternumber: '54'}, 
+  { name: 'Howard Liu',       nickname: 'Lyft'            rosternumber: '55'}
   // { name: 'Name',            nickname: 'Nickname' }, 
   // { name: 'Name',            nickname: 'Nickname' }, 
   // { name: 'Name',            nickname: 'Nickname' }, 
