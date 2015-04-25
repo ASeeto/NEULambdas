@@ -308,8 +308,11 @@ ul.mission li{
 }
 
 /* SUBCONTENT: FAMILY TREE */
+#familytree .contentbox{
+	text-align: center;
+}
 #familytree .contentbox svg{
-	margin-top: -30px;
+	margin-top: -25px;
 }
 .node circle{
 	/*fill: #45c8dc !important;*/
