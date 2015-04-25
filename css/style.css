@@ -306,3 +306,26 @@ ul.mission li{
 #chapters .contentbox a:link, a:visited{
 	color: #fff;
 }
+
+/* SUBCONTENT: FAMILY TREE */
+#familytree .contentbox svg{
+	margin-top: -30px;
+}
+.node circle{
+	/*fill: #45c8dc !important;*/
+	stroke: #1d2027;
+	stroke-width: 3px;
+}
+.node circle:hover, .node text:hover{
+	cursor:pointer;
+	fill: #fff !important;
+}
+.node text{ 
+	font-size: 12px;
+	fill: #fff;
+}
+.link{
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 1px;
+}

@@ -10,6 +10,8 @@ $(function() {
             var html = '<h1>'+title.charAt(0).toUpperCase()+title.slice(1)+'</h1>';
             if(html === "<h1>Eboards</h1>"){
                 $('#title').html("<h1>EBoards</h1>")
+            }else if(html === "<h1>Familytree</h1>"){
+                $('#title').html("<h1>Family Tree</h1>")
             }else{
                 $('#title').html(html);
             }

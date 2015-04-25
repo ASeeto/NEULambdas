@@ -20,7 +20,7 @@ $(document).ready(function(){
                                     '<br />'+
                                 '</div>'+
                               '</div>');
-            $('#family .contentbox').append(groupname);
+            $('#family .contentbox').prepend(groupname);
         }
     });
 
