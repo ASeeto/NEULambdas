@@ -1,6 +1,7 @@
 // THANK YOU TO THE FOLLOWING SOURCES:
 // http://bl.ocks.org/d3noob/8329404
 // http://bl.ocks.org/d3noob/8375092
+// http://jsfiddle.net/MetalMonkey/JnNwu/
 
 // *********** Convert flat data into a nice tree ***************
 // create a name: node map
