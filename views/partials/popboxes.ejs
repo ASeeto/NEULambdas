@@ -1,0 +1,11 @@
+<div id="hiddenpopboxes">
+<% results.brothers.forEach(function(b) { %>
+    <div class="popbox" id="pop<%= b.rosternumber %>">
+        <span class="name"><%= b.name %></span>
+        <p>
+            <span>Roster: </span>#<%= b.rosternumber %><br>
+            <span>Nickname: </span><%= b.nickname %>
+        </p>
+    </div>
+<% }) %>
+</div>

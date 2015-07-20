@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/head.ejs %>
+    <style>
+        body {
+            text-align: center;
+        }
+        .col-md-3 {
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Admin Console</h2>
+<p>Select a table.</p>
+
+<div class="container">
+
+<a href="/brothers">
+    <div class="btn-primary col-md-3">
+        <h1>Brothers</h1>
+    </div>
+</a>
+<a href="/eboards">
+    <div class="btn-success col-md-3">
+        <h1>EBoards</h1>
+    </div>
+</a>
+<a href="/classes">
+    <div class="btn-warning col-md-3">
+        <h1>Classes</h1>
+    </div>
+</a>
+<a href="/chapters">
+    <div class="btn-danger col-md-3">
+        <h1>Chapters</h1>
+    </div>
+</a>
+
+</div>
+
+</body>
+</html>

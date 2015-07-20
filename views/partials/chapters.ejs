@@ -1,0 +1,47 @@
+<div id="section-chapters" class="section">
+    <div class="chapters-content-wrap">
+        <div class="slide">
+            <h1>Chapters</h1>
+            <div class="table-responsive">
+                <table id="chapters-table" class="table">
+                    <thead>
+                        <tr id="head">
+                            <th>ID</th>
+                            <th>Status</th>
+                            <th>Campus</th>
+                            <th>Founding Date</th>
+                            <th>Location</th>
+                            <th>Region</th>
+                            <th>Website</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% results.chapters.forEach(function(r) { %>
+                        <tr>
+                        <% for(var column in r) { %>
+                            <% if (column == 'campus') { %>
+                                <td>
+                                    <% if (r['website']) { %>
+                                        <a href="<%= r['website']%>"><%= r[column] %></a>
+                                    <% } else { %>
+                                        <%= r[column] %>
+                                    <% } %>
+                                </td>
+                            <% } else { %>
+                                <td><%= r[column] %></td>
+                            <% } %>
+                        <% } %>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <input type="text" id="chapters-search" placeholder="Enter Search Criteria"></input>
+        </div>
+        <div class="slide">
+            <h1>Interactive Map</h1>
+            <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zOdNYI_ZRxVo.krHzpZ5vWCCs" width="100%" height="500"></iframe>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head.ejs %>
+</head>
+
+<body>
+  <div class="loader">
+    <div>
+      <i class="fa fa-4x fa-refresh"></i>
+    </div>
+  </div>
+  <% include ../partials/header.ejs %>
+  <% include ../partials/nav.ejs %>
+  <div id="container">
+    <div class="container-fluid wrapper">
+      <div class="row">
+        <div id="content">
+          <% include ../partials/home.ejs %>
+          <% include ../partials/mission.ejs %>
+          <% include ../partials/story.ejs %>
+          <% include ../partials/family.ejs %>
+          <% include ../partials/eboards.ejs %>
+          <% include ../partials/chapters.ejs %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% include ../partials/popboxes.ejs %>
+  <% include ../partials/scripts.ejs %>
+</body>
+</html>

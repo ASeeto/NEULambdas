@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/head.ejs %>
+    <style>
+        body {
+            text-align: center;
+        }
+        .col-md-3 {
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Database Results</h2>
+<p><a href="/admin">Return to Admin Console</a></p>
+
+<div class="container">
+    <div class="table-responsive table-striped">
+        <table class="table">
+            <thead>
+                <% for(var column in results[0]) { %>
+                    <th><b><%= column %></b></th>
+                <% } %>
+            </thead>
+            <tbody>
+                <% results.forEach(function(r) { %>
+                    <tr id=<%= r['id'] %>>
+                    <% for(var column in r) { %>
+                        <% if (column == 'id') { %>
+                            <td><%= r[column] %></td>
+                        <% } else { %>
+                            <td><input class="form-control" type="text" value='<%= r[column] %>'></input></td>
+                        <% } %>
+                    <% } %>
+                        <td><button class="duplicate btn btn-primary"><i class="fa fa-1x fa-files-o"></button></td>
+                        <td><button class="reset btn btn-warning"><i class="fa fa-1x fa-refresh"></button></td>
+                        <td><button class="delete btn btn-danger"><i class="fa fa-1x fa-trash-o"></button></td>
+                        <td><button class="update btn btn-success"><i class="fa fa-1x fa-floppy-o"></i></button></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

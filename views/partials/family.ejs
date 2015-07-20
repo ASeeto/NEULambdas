@@ -1,0 +1,38 @@
+<div id="section-family" class="section">
+    <div class="family-content-wrap">
+        <h1>Family</h1>
+        <div class="brothers col-md-8 col-md-offset-2">
+            <% results.classes.reverse().forEach(function(c) { %>
+            <div class="classheader">
+                <h4><%= c.name %> Class</h4>
+                <p><%= c.semester %></p>
+            </div>
+            <div id="<%= c.name %>" class="class">
+                <div class="nme">
+                    <img class="popper profile" 
+                         data-popbox="pop<%= c.pd %>" 
+                         src="/img/family/<%= c.pd %>.png">
+                    <br>
+                    New Member Educator
+                </div>
+                <div class="members">
+                    <% results.brothers.forEach(function(b) { %>
+                        <% if (b.class == c.name) { %>
+                            <div class="member">
+                                <img class="popper profile" 
+                                     data-popbox="pop<%= b.rosternumber %>" 
+                                     src="/img/family/<%= b.rosternumber %>.png">
+                                <br>
+                                <%= b.name %>
+                            </div>
+                        <% } %>
+                    <% }); %>
+                    <span class="clearfix"></span>
+                </div>
+                <span class="clearfix"></span>
+            </div>
+            <% }) %>
+            <span class="clearfix"></span>
+        </div>
+    </div>
+</div>

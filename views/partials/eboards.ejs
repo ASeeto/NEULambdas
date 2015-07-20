@@ -1,0 +1,32 @@
+<div id="section-eboards" class="section">
+    <div class="eboards-content-wrap">
+        <h1>Executive Boards</h1>
+        <div class="eboards col-md-8 col-md-offset-2">
+            <% results.eboards.reverse().forEach(function(e) { %>
+            <div class="eboardheader">
+                <h4><%= e.semester %></h4>
+            </div>
+            <div id="semester<%= e.id %>" class="eboard">
+                <div class="members">
+                    <% for(var title in e) { %>
+                        <% if(title == 'semester' || title == 'id') { %>
+                            <% continue; %>
+                        <% } else { %>
+                            <div class="member">
+                                <img class="popper profile" 
+                                     data-popbox="pop<%= e[title] %>" 
+                                     src="/img/family/<%= e[title] %>.png">
+                                <br>
+                                <%= title.charAt(0).toUpperCase() + title.substring(1) %>
+                            </div>
+                        <% } %>
+                    <% } %>
+                    <span class="clearfix"></span>
+                </div>
+                <span class="clearfix"></span>
+            </div>
+            <% }) %>
+            <span class="clearfix"></span>
+        </div>
+    </div>
+</div>
